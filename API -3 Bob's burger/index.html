@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenQuotes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+    <script defer  src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <h1 class="h1">The Bob's Burgers API</h1>
+    </nav>
+    
+    <div class="bck"></div>
+    <h1 class="h11">Refresh for Fresh data</h1>
+    
+    <div class="alignbtn">
+              
+    </div>
+    <div class="iline">
+    <div class="api">
+        <p id="api">
+            API: https://bobsburgers-api.herokuapp.com/characters/?limit=9&skip=253</p>
+    </div>
+    <button onclick="window.location.reload()" type="button" class="btn ">↻ Refresh</button>
+</div>
+    
+<div class="box">
+    
+    <div id="ct"> 
+    <!-- JSON DATA HERE -->
+    </div>
+    
+</div>
+<div class="bn">
+        <button id="left"> ⬅️</button>
+        <button id="right">➡️ </button>
+    </div>
+    
+</body>
+<footer >
+    <div class="footer">
+            <p class="copy">&copy; Chandru.Bob's Burger
+            <p class="bur"> 🍔</p>
+    </div>
+    
+</footer>
+</html>

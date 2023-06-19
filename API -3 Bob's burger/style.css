@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: whitesmoke;
+}
+#ct{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* flex-wrap: wrap ; */
+    overflow-x: scroll;
+    padding: 30px;
+    justify-content: center;
+    /* background-color: aqua; */
+    
+}
+
+.comic{
+
+    width: 400px;
+    height: 480px;
+    background-color: white;
+    box-shadow: 0 0 1.5px black;
+    padding: 20px;
+    border-radius: 7px;
+    overflow-y: scroll;
+    
+    >.img{
+        width: 120;
+        height: 200px;
+    }
+    
+}
+.comic::-webkit-scrollbar{
+    display: none;
+}
+
+.name{
+    color: blue;
+    font-size: 25px;
+}
+.ep,.vb,.name,.fepisode,.vb,.voiceby{
+   margin-bottom: 5px;
+    
+}
+.ep,.vb{
+    opacity: .6; 
+}
+
+#right{
+    
+    border: none;
+   
+   font-size: 40px;
+   
+}
+#left{
+    border: none;
+  
+   font-size: 40px;
+   
+}
+#left:hover{
+    opacity: .6;
+}
+#right:hover{
+    opacity: .6;
+}
+.bck{
+    background:url(burger.jpg);
+    /* background-size: cover; */
+    background-position: center;
+    height: 400px;
+    width: auto;
+  
+   
+}
+
+
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(75, 70, 70);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center
+}
+.bur{
+    font-size: 25px;
+}
+.bn{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    outline: none;
+   
+}
+.api{
+    width: 43%;
+    box-shadow: 0 0 3px black;
+    overflow-x: scroll;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; 
+    margin-left: 10%;
+    border-radius: 5px;
+    margin: auto;
+}
+.api::-webkit-scrollbar{
+    display: none;
+}
+#api{
+    width: 650px;
+    margin: auto;
+    padding: 15px;
+}
+.btn{
+    height: 50px;
+    padding: 14px;
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    border-radius: 30px;
+    font-weight: bold;
+    border: none;
+    margin: auto;
+   
+    
+  
+}
+.iline{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.btn:hover{
+    opacity: .5;
+}
+.h11{
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 30px;
+    color: blue;
+    
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    background-color: whitesmoke;
+
+}
+.h1{
+    padding: 5px;
+    font-size: 35px;
+    padding-left: 30px;
+    box-shadow: 1px 0 3px black;
+    background-color:whitesmoke;
+    color: rgb(96, 79, 79);
+    
+}
