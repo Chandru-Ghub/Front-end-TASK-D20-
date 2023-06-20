@@ -3,7 +3,7 @@
 fetch('https://emojihub.yurace.pro/api/all').then((data)=>{
     return data.json();
 }).then((a)=>{
-    
+
     let card = '';
     let slide = '';
     let len = 0;
