@@ -73,7 +73,7 @@ body{
     opacity: .6;
 }
 .bck{
-    background:linear-gradient(rgba(52, 51, 51, 0.475),rgba(0, 0, 0, 0.486)),url(burger.jpg);
+    background:linear-gradient(rgba(52, 51, 51, 0.653),rgba(0, 0, 0, 0.648)),url(burger.jpg);
     background-size: cover;
     background-position: center;
     height: 500px;
@@ -98,6 +98,7 @@ body{
    font-family: myFirstFont;
    font-weight: 500;
    width: 50%;
+   margin-left: 50px;
    
   
 }
