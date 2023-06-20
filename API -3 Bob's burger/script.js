@@ -3,8 +3,8 @@
 //Generate the random page out of 505 pages
 const randomPage = Math.floor((Math.random()*505));
 
-let page = `https://bobsburgers-api.herokuapp.com/characters/?limit=9&skip=${randomPage}`
-fetch(page).then((data)=>{
+let webPage = `https://bobsburgers-api.herokuapp.com/characters/?limit=9&skip=${randomPage}`
+fetch(webPage).then((data)=>{
     return data.json();
 }).then((fdata)=>{
 
@@ -16,7 +16,8 @@ fetch(page).then((data)=>{
   let endIndex = (startIndex + itemsPerPage);
   let productPerPage = fdata.slice(startIndex,endIndex);
 
-    
+let api = document.querySelector("#api")
+api.innerHTML= `API: ${webPage}`;
     let content = '';
 
     productPerPage.forEach((a)=>{

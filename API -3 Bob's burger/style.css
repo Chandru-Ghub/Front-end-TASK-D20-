@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -48,7 +49,8 @@ body{
     
 }
 .ep,.vb{
-    opacity: .6; 
+    color: grey;
+   
 }
 
 #right{
@@ -71,14 +73,35 @@ body{
     opacity: .6;
 }
 .bck{
-    background:url(burger.jpg);
+    background:linear-gradient(rgba(52, 51, 51, 0.475),rgba(0, 0, 0, 0.486)),url(burger.jpg);
     background-size: cover;
     background-position: center;
-    height: 400px;
-    width: auto;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
   
    
 }
+@font-face {
+    font-family: myFirstFont;
+    src: url("Bob\'s\ Burgers 2.ttf");
+}
+.bob{
+   color: white;
+   font-size: 80px;
+   text-transform: uppercase;
+   /* font-family: 'Amatic SC', cursive; */
+   font-family: myFirstFont;
+   font-weight: 500;
+   width: 50%;
+   margin-left:100px ;
+  
+}
+
 
 
 .footer{
@@ -120,6 +143,7 @@ body{
     width: 650px;
     margin: auto;
     padding: 15px;
+    height: 50px;
 }
 .btn{
     height: 50px;
@@ -148,7 +172,7 @@ body{
     margin-left: 20px;
     padding: 10px;
     font-size: 30px;
-    color: bluered;
+    color: blue;
     
 }
 
@@ -160,20 +184,80 @@ nav{
 }
 .h1{
     padding: 5px;
-    font-size: 35px;
+    font-size: 40px;
     padding-left: 30px;
     box-shadow: 1px 0 3px black;
-    background-color:whitesmoke;
+    background-color:white;
     color: rgb(96, 79, 79);
+    /* font-family: myFirstFont; */
+    
     
 }
-/* @media  screen and(max-width:440px) {
-    .h11{
-        color: red;
-    }
-} */
-@media screen and (max-width: 480px) {
-    body {
-      background-color: lightgreen;
+ @media screen and (max-width: 700px) {
+
+    .bob{
+        font-size: 70px;
     }
   }
+
+@media screen and (max-width: 500px) {
+   
+    .bck{
+        background:linear-gradient(rgba(0, 0, 0, 0.405),rgba(0, 0, 0, 0.521)),url(burger.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+        width: auto;
+        padding-top: 20px;
+      
+       
+    }
+    .iline{
+        display: block;
+        justify-content: space-around;
+        align-items: center;
+       
+    }
+    .btn{
+        margin:20px 0 0 40%;
+        padding: 5px;
+        font-size: 15px;
+        height: 40px;
+    }
+    .api{
+        width: 80%;
+        height: 50px;
+        
+    }
+    .h11{
+        text-align: center;
+        font-size: 25px;
+    }
+    .h1{
+        text-align: center;
+        background-color: black;
+        color: white;
+        box-shadow: none;
+        font-size: 30px;
+    }
+    .comic{
+
+        width: 320px;
+        height: 430px;
+        background-color: white;
+        box-shadow: 0 0 1.5px black;
+        padding: 20px;
+        border-radius: 7px;
+        overflow-y: scroll;
+        
+        >.img{
+            width: 100;
+            height: 150px;
+        }
+        
+    }
+    .bob{
+        font-size: 50px;
+    }
+  }
+ 
