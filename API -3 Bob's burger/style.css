@@ -12,7 +12,6 @@ body{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    /* flex-wrap: wrap ; */
     overflow-x: scroll;
     padding: 30px;
     justify-content: center;
@@ -149,9 +148,6 @@ body{
     font-weight: bold;
     border: none;
     margin: auto;
-   
-    
-  
 }
 .iline{
     display: flex;
